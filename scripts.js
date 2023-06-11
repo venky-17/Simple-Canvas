@@ -81,3 +81,18 @@ function preventBounds(e){
 
 
   });
+  const mediaQuery = window.matchMedia("(max-width: 800px)");
+
+ 
+  const handleMediaQuery = (mq) => {
+    if (mq.matches) {
+     
+      alert("Please try this on laptop");
+    } else {
+     return
+    }
+  };
+
+ 
+  handleMediaQuery(mediaQuery);
+  mediaQuery.addListener(handleMediaQuery);
