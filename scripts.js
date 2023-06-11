@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.querySelector('#draw');
     const ctx = canvas.getContext("2d");
 
-    // const clearBtn = document.querySelector('.clear')
-    // function clearCanvas(){
+    const clearBtn = document.querySelector('.clear')
+     function clearCanvas(){
 
-    //  ctx.clearRect(0,0, canvas.width, canvas.height)      }
+     ctx.clearRect(0,0, canvas.width, canvas.height)      }
 
-    // clearBtn.addEventListener('click', clearCanvas)
+     clearBtn.addEventListener('click', clearCanvas)
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
